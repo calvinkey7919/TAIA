@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chauffeur Services in Jeddah</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Chauffeur Jeddah</a>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#booking">Book Now</a>
+            <a href="#signup">Sign Up</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Experience Luxury Chauffeur Services in Jeddah</h1>
+        <p>Reliable, Comfortable, and Professional</p>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <div class="booking-form">
+            <h2>Book Your Ride</h2>
+            <form id="bookingForm">
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                <input type="datetime-local" id="pickupDateTime" name="pickupDateTime" required>
+                <input type="text" id="pickupLocation" name="pickupLocation" placeholder="Pickup Location" required>
+                <input type="text" id="dropoffLocation" name="dropoffLocation" placeholder="Drop-off Location" required>
+                <select id="vehicleType" name="vehicleType" required>
+                    <option value="" disabled selected>Select Vehicle Type</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+                <button type="submit">Confirm Booking</button>
+            </form>
+            <p id="bookingSuccess" class="success-message" style="display:none;">Thank you! Your booking has been received.</p>
+        </div>
+    </section>
+
+    <!-- Sign-Up Section -->
+    <section id="signup">
+        <div class="signup-form">
+            <h2>Create an Account</h2>
+            <form id="signupForm">
+                <input type="text" id="signupName" name="signupName" placeholder="Full Name" required>
+                <input type="email" id="signupEmail" name="signupEmail" placeholder="Email Address" required>
+                <input type="password" id="signupPassword" name="signupPassword" placeholder="Password" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p id="signupSuccess" class="success-message" style="display:none;">Welcome! Your account has been created.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Chauffeur Jeddah. All rights reserved.</p>
+    </footer>
+</body>
+</html>
